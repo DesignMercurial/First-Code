@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class MyClass {
+    public static void HowBig(String[ ] args) {
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter an Integer: ");
+       int number = input.nextInt();
+       System.out.println("You Entered " + number);
+       input.close();
+       if(number < 50){
+           System.out.println("Your Number Is Less Than 50");
+       }else if(number < 100){
+           System.out.println("Your Number Is Less Than 100");
+           }else if(number < 1000){
+               System.out.println("Your Number Is Greater Than 100");
+           }else if(number > 1000){
+               System.out.println("Your Number Is Too Big");
+           
+           }
+    }
+}
